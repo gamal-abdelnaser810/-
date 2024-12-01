@@ -1,0 +1,117 @@
+/* تنسيق الجسم والصفحة */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+/* حاوية الجدول */
+.table-container {
+  max-width: 1000px;
+  margin: 85px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #0A3981, #3a5a91);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* تنسيق الجدول */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* تنسيق الرأس */
+th {
+  background-color: #333;
+  color: rgb(253, 253, 253);
+  padding: 35px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* تنسيق الخلايا */
+td {
+  background-color: #ffffff;
+  padding: 12px;
+  text-align: center;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+/* تأثير التمرير على الخلايا */
+td:hover {
+  background-color: #D4EBF8;
+  cursor: pointer;
+}
+
+/* تأثير التمرير على الصفوف بالكامل */
+tr:hover td {
+  background-color: #D4EBF8 ;
+}
+
+/* تنسيق الصفوف بالتناوب */
+tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* تنسيق الصورة داخل الجدول */
+.person-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* لجعل الصورة دائرية */
+  object-fit: cover;
+}
+
+/* التأثيرات عند تمرير الماوس على الصورة */
+.person-image:hover {
+  transform: scale(1.1); /* تكبير الصورة عند المرور عليها */
+  transition: transform 0.3s ease;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #0A3981, #3a5a91);
+  padding: 0px 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 90px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 0 15px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+.navbar .logo img {
+  max-width: 75px;  
+  height: auto;      
+  border-radius: 50%;
+}
+
+

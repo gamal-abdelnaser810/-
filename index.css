@@ -1,0 +1,94 @@
+/* تنسيق الجسم والصفحة */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    /* direction: rtl;  */
+    background-color: #f4f4f4;
+}
+
+/* التنسيق الخاص بشريط التنقل (Navbar) */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(to right, #0A3981, #3a5a91);
+        padding: 15px 3px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 5;
+        z-index: 1000;
+        height: 60px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 8px;
+        margin: 0 15px;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .navbar a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: scale(1.1);
+    }
+
+/* تنسيق المحتوى الرئيسي */
+.content {
+    padding: 90px;
+    text-align: center;
+}
+
+/* تنسيق رأس الصفحة (اسم المدرسة) */
+.school-header {
+    margin-bottom: 40px;
+}
+
+.school-header h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.school-header p {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+/* قسم الأخبار */
+#news {
+    background: linear-gradient(to right, #0A3981, #3a5a91);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.news-item p {
+    font-size: 1rem;
+    color: #666;
+}
+.navbar .logo img {
+    max-width: 75px;  
+    height: auto;      
+    border-radius: 50%;
+    padding-left: 5px;
+}
